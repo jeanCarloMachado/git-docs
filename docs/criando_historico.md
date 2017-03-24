@@ -58,7 +58,7 @@ Exercício
 
 ```
 Crie um projeto usando o mkdocs
-Crie um arquivo resumindo como inicilizar um projeto git
+Crie um arquivo resumindo como inicializar um projeto git
 Comite esse arquivo
 Crie um arquivo resumindo como utilizar o commit
 Comite esse arquivo
