@@ -34,6 +34,12 @@ Mais adequado para entrega contínua
  - entrega-se a nova versão
 
 
+Gitlab Flow
+-----------
+
+[https://about.gitlab.com/2014/09/29/gitlab-flow/](https://about.gitlab.com/2014/09/29/gitlab-flow/)
+
+
 Estudando fluxos de projetos open-source
 ----------------------------------------
 
