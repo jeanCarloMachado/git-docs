@@ -3,22 +3,20 @@ theme: mkdocs
 pages:
 - Git:
     - Home: 'index.md'
-    - História: 'historia.md'
-    - Comandos: 'comandos.md'
+    - Introdução: 'introducao.md'
+    - Lista de comandos: 'comandos.md'
 - Básico:
-    - Pra que serve: 'pra-que-serve.md'
     - Inicializando um projeto: 'inicializando-projeto.md'
     - Criando Histórico: 'criando_historico.md'
+    - Boas Práticas de commits: 'boas_praticas.md'
     - Branches: 'branches.md'
     - Merges: 'merges.md'
-    - Patches: 'patches.md'
-    - Recuperando: 'recuperando_no_historico.md'
-    - Desfazendo: 'desfazendo.md'
     - Remotos: 'remotos.md'
-    - Github & Gitlab: 'github_gitlab.md'
-    - Boas Práticas: 'boas_praticas.md'
     - Fluxos de trabalho: 'fluxos_de_trabalho.md'
+    - Github e Gitlab: 'github_gitlab.md'
 - Avançado:
+    - Recuperando e desfazendo: 'recuperando_desfazendo.md'
+    - Patches: 'patches.md'
     - Customizando:  'customizando.md'
     - Ferramentas Auxiliares: 'ferramentas-auxiliares-e-produtividade.md'
     - Criando um servidor git: 'criando_servidor.md'

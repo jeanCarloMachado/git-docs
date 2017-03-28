@@ -12,9 +12,10 @@ use: `git branch`
 
 ### Branches no git são baratas
 
+A branch atual é aquela apontada pelo objeto HEAD.
+
 ![Objetos que compõem o histórico](history_objects.png)
 
-A branch atual é aquela apontada pelo objeto HEAD.
 
 ```sh
 cat .git/HEAD
@@ -24,10 +25,13 @@ cat .git/HEAD
 Listando branches
 -----------------
 
+```sh
 git branch
 git branch -v
 git branch --merged
 git branch --no-merged
+
+```
 
 ### Criando branches
 
@@ -46,13 +50,14 @@ git checkout nova_branch
 ### Usando branches
 
 ```sh
-git commit "informações sobre branches no master"
+#da master
 git checkout -b "recursos_adicionais" #cria outra linha de trabalho
+#adicionados recursos adicionais
+git commit "recursos adicionais x,y,z"
+git checkout -b "recursos_adicionais_extras" 
+#mais recursos adicionais
 
 ```
-
-O comando checkout serve para criar a branch e entrar nela.
-
 
 ### Merge
 
@@ -61,6 +66,7 @@ Merge mescla o conteúdo de branches
 ```sh
 git merge recursos_adicionais
 git log
+git log [branch_name]
 
 ```
 
@@ -80,16 +86,3 @@ git branch -d branch_name
 
 ```
 
-Exercícios
-----------
-
-```sh
-Faça algumas modificações em uma branch de nova feature
-Volte para a master e faça uma nova branch de hotfix e trabalhe
-nela
-
-Após validar as modificações faça merge da branch de hotfix
-Volte a trabalhar na branch de nova feature
-Tragas as modificações para a master
-
-```

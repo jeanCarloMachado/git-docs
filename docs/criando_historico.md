@@ -1,3 +1,15 @@
+Status
+------
+
+Git status dá informações de como está seu repositório. Muito útil
+ara saber qual a próxima coisa a se fazer.
+
+```sh
+git status
+git status -s
+
+```
+
 Add
 ---
 
@@ -32,19 +44,6 @@ git commit -a
 Consultando o histórico
 -----------------------
 
-### Gitk
-
-```sh
-gitk
-
-```
-ou
-
-```sh
-gitk nome_do_arquivo
-
-```
-
 ### Git log
 
 ```sh
@@ -52,38 +51,46 @@ git log
 
 ```
 
+### Gitk
 
-Exercício
----------
+```sh
+gitk
 
-```
-Crie um projeto usando o mkdocs
-Crie um arquivo resumindo como inicializar um projeto git
-Comite esse arquivo
-Crie um arquivo resumindo como utilizar o commit
-Comite esse arquivo
-Consulte a versão anterior com o gitk
 ```
 
 ### Setup mkdocs
 
 
-```
-$ pip install mkdocs
-$ mkdocs new git-docs
-$ cd git-docs
-$ mkdocs serve
-$ browser http://localhost:8000
-```
+```sh
+gitk nome_do_arquivo
 
+```
 
 Removendo arquivos
 ------------------
 
+```sh
 git rm --cached foo.txt//staging
 git rm foo.txt
 
+```
 
+Gitignore
+----------
+
+```sh
+site/*
+*.pd
+*.doc
+presentation.pdf
+.DS_Store
+*.un~
+*.disabled
+Backend/data/tmp*
+*.eml
+Backend/config/autoload/*local.php
+
+```
 Renomeando arquivos
 -------------------
 
